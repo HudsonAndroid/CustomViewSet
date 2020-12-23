@@ -6,3 +6,4 @@
 想到的方案是：检测歌词整体结构是否是中文的，如果是才这样展示，并在超标的情况下分行。由于后面没有继续处理下去，因此留存在这里。
 ## [3.圆形SeekBar](/app/src/main/java/com/hudson/customview/circleseekbar)
 ## [4.步骤进度条](/app/src/main/java/com/hudson/customview/stepprogressbar)
+## [5.数值选择器](/app/src/main/java/com/hudson/customview/valueselector)

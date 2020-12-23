@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.hudson.customview.circleseekbar.CircleSeekBarActivity
 import com.hudson.customview.gesturelock.GestureLockActivity
 import com.hudson.customview.stepprogressbar.StepActivity
+import com.hudson.customview.valueselector.ValueSelectActivity
 
 
 class MainActivity : AppCompatActivity() {
@@ -15,6 +16,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun jump(view: View) {
-        startTargetPage<StepActivity>()
+        startTargetPage<ValueSelectActivity>()
     }
 }

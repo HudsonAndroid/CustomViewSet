@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!--有多个自定义控件使用到的自定义属性-->
+    <attr name ="circle_radius" format="dimension"/>
+    <attr name ="text_size" format="dimension"/>
+
     <!--手势锁自定义控件使用-->
     <declare-styleable name="GestureLock">
         <attr name ="noneInnerColor" format="color"/>
@@ -22,7 +26,7 @@
 
     <!--步骤进度条-->
     <declare-styleable name="StepProgressView">
-        <attr name ="circle_radius" format="dimension"/>
+        <attr name ="circle_radius"/>
         <attr name ="step_counts" format="integer"/>
         <attr name ="padding_left" format="dimension"/>
         <attr name ="padding_right" format="dimension"/>
@@ -33,6 +37,22 @@
         <attr name ="bg_color" format="color"/>
         <attr name ="stroke_width" format="dimension"/>
         <attr name ="auto_adapte" format="boolean"/>
-        <attr name ="text_size" format="dimension"/>
+        <attr name ="text_size"/>
+    </declare-styleable>
+
+    <!--数值选择器-->
+    <declare-styleable name="ValueSelector">
+        <attr name="style">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+        <attr name ="line_length" format="dimension"/>
+        <attr name ="circle_radius"/>
+        <attr name ="line_stroke_width" format="dimension"/>
+        <attr name ="min_value" format="integer"/>
+        <attr name = "max_value" format="integer"/>
+        <attr name="line_color" format="color"/>
+        <attr name="circle_color" format="color"/>
+        <attr name="text_size"/>
     </declare-styleable>
 </resources>

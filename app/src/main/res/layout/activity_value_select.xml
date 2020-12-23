@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000"
+    tools:context=".valueselector.ValueSelectActivity">
+
+    <com.hudson.customview.valueselector.ValueSelector
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:line_length="500dp"
+        app:text_size="17sp"
+        app:circle_radius="20dp" />
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.hudson.customview.valueselector.ValueSelector
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:text_size="17sp"
+            app:circle_radius="20dp"
+            app:style="vertical" />
+
+        <com.hudson.customview.valueselector.ValueSelector
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:circle_color="#bb25f4"
+            app:line_color="#5500ff00"
+            app:text_size="17sp"
+            app:circle_radius="20dp"
+            app:style="vertical" />
+
+        <com.hudson.customview.valueselector.ValueSelector
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:circle_color="@android:color/holo_blue_bright"
+            app:text_size="17sp"
+            app:circle_radius="20dp"
+            app:style="vertical" />
+
+        <com.hudson.customview.valueselector.ValueSelector
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:text_size="17sp"
+            app:circle_radius="20dp"
+            app:style="vertical" />
+
+    </LinearLayout>
+    
+</LinearLayout>
