@@ -7,6 +7,8 @@ import com.hudson.customview.circleseekbar.CircleSeekBarActivity
 import com.hudson.customview.gesturelock.GestureLockActivity
 import com.hudson.customview.stepprogressbar.StepActivity
 import com.hudson.customview.valueselector.ValueSelectActivity
+import com.hudson.customview.wraplayout.WrapActivity
+import com.hudson.customview.wraplayout.WrapLayout
 
 
 class MainActivity : AppCompatActivity() {
@@ -16,6 +18,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun jump(view: View) {
-        startTargetPage<ValueSelectActivity>()
+        startTargetPage<WrapActivity>()
     }
 }

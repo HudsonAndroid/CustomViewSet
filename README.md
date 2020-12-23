@@ -7,3 +7,4 @@
 ## [3.圆形SeekBar](/app/src/main/java/com/hudson/customview/circleseekbar)
 ## [4.步骤进度条](/app/src/main/java/com/hudson/customview/stepprogressbar)
 ## [5.数值选择器](/app/src/main/java/com/hudson/customview/valueselector)
+## [6.WrapLayout](/app/src/main/java/com/hudson/customview/wraplayout)

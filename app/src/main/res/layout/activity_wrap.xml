@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".wraplayout.WrapActivity">
+
+    <com.hudson.customview.wraplayout.WrapLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            style="@style/ItemTextViewStyle"
+            android:layout_height="80dp"
+            android:text="kotlin" />
+
+        <TextView
+            style="@style/ItemTextViewStyle"
+            android:text="Hello,Hudson" />
+
+        <TextView
+            style="@style/ItemTextViewStyle"
+            android:text="努力ing" />
+
+        <TextView
+            android:layout_width="80dp"
+            style="@style/ItemTextViewStyle"
+            android:text="你好@v@" />
+
+        <TextView
+            style="@style/ItemTextViewStyle"
+            android:text="学习ing" />
+
+        <TextView
+            style="@style/ItemTextViewStyle"
+            android:text="地球" />
+
+        <TextView
+            style="@style/ItemTextViewStyle"
+            android:text="Flutter" />
+
+
+        <TextView
+            style="@style/ItemTextViewStyle"
+            android:text="Android" />
+
+        <TextView
+            style="@style/ItemTextViewStyle"
+            android:text="哈哈*——*" />
+
+        <TextView
+            android:layout_width="40dp"
+            style="@style/ItemTextViewStyle"
+            android:text="图灵机器人" />
+
+
+    </com.hudson.customview.wraplayout.WrapLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
