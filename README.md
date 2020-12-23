@@ -9,3 +9,4 @@
 ## [5.数值选择器](/app/src/main/java/com/hudson/customview/valueselector)
 ## [6.WrapLayout](/app/src/main/java/com/hudson/customview/wraplayout)
 ## [7.圆形音频律动控件](/app/src/main/java/com/hudson/customview/circlewaveview)
+## [8.滚轮自定义控件](https://github.com/HudsonAndroid/WheelView)
