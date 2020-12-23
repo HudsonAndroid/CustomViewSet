@@ -9,4 +9,14 @@
         <attr name = "sideCount" format="integer"/>
         <attr name = "tryTimes" format="integer"/>
     </declare-styleable>
+
+    <!--圆形SeekBar使用-->
+    <declare-styleable name="CircleSeekBar">
+        <attr name="radius" format="dimension"/>
+        <attr name="reach_stroke_width" format="dimension"/>
+        <attr name="unreach_stroke_width" format="dimension"/>
+        <attr name="reach_color" format="color"/>
+        <attr name="unreach_color" format="color"/>
+        <attr name="padding" format="dimension"/>
+    </declare-styleable>
 </resources>
