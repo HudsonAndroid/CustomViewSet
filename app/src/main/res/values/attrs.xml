@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--手势锁自定义控件使用-->
+    <declare-styleable name="GestureLock">
+        <attr name ="noneInnerColor" format="color"/>
+        <attr name ="selectingColor" format="color"/>
+        <attr name ="selectedColor" format="color"/>
+        <attr name ="noneOuterColor" format="color"/>
+        <attr name = "sideCount" format="integer"/>
+        <attr name = "tryTimes" format="integer"/>
+    </declare-styleable>
+</resources>
