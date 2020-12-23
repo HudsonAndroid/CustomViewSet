@@ -22,11 +22,4 @@ class CircleSeekBarActivity : AppCompatActivity() {
             Timber.e("User has select progress, the percentage is ${seekBar.touchPercent}")
         }
     }
-
-
-    companion object{
-        fun start(from: Context) {
-            from.startActivity(Intent(from, CircleSeekBarActivity::class.java));
-        }
-    }
 }

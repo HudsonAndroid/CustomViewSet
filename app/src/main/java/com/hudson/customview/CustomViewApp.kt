@@ -1,6 +1,8 @@
 package com.hudson.customview
 
+import android.app.Activity
 import android.app.Application
+import android.content.Intent
 import timber.log.Timber
 
 /**
@@ -14,4 +16,9 @@ class CustomViewApp : Application() {
             Timber.plant(Timber.DebugTree())
         }
     }
+}
+
+// 打开指定Activity
+inline fun <reified T: Activity> Activity.startTargetPage() {
+    startActivity(Intent(this, T::class.java))
 }

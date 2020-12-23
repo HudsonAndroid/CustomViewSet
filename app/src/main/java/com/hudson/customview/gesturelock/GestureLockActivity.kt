@@ -25,10 +25,4 @@ class GestureLockActivity : AppCompatActivity() {
             override fun onTimesOver() {}
         })
     }
-
-    companion object{
-        fun start(from: Context) {
-            from.startActivity(Intent(from, GestureLockActivity::class.java));
-        }
-    }
 }

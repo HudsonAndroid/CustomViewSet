@@ -19,4 +19,20 @@
         <attr name="unreach_color" format="color"/>
         <attr name="padding" format="dimension"/>
     </declare-styleable>
+
+    <!--步骤进度条-->
+    <declare-styleable name="StepProgressView">
+        <attr name ="circle_radius" format="dimension"/>
+        <attr name ="step_counts" format="integer"/>
+        <attr name ="padding_left" format="dimension"/>
+        <attr name ="padding_right" format="dimension"/>
+        <attr name ="padding_top" format="dimension"/>
+        <attr name ="padding_bottom" format="dimension"/>
+        <attr name ="reached_color" format="color"/>
+        <attr name ="cur_color" format="color"/>
+        <attr name ="bg_color" format="color"/>
+        <attr name ="stroke_width" format="dimension"/>
+        <attr name ="auto_adapte" format="boolean"/>
+        <attr name ="text_size" format="dimension"/>
+    </declare-styleable>
 </resources>

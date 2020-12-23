@@ -10,7 +10,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".circleseekbar.CircleSeekBarActivity"></activity>
+        <activity android:name=".stepprogressbar.StepActivity"></activity>
+        <activity android:name=".circleseekbar.CircleSeekBarActivity" />
         <activity android:name=".gesturelock.GestureLockActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
