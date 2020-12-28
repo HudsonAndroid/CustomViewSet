@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".diagramview.DiagramActivity">
+
+    <com.hudson.customview.diagramview.pillar.ScrollablePillarView
+        android:id="@+id/spv_scrollable"
+        android:layout_marginTop="@dimen/margin_normal"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="@dimen/margin_normal"
+        android:layout_marginRight="@dimen/margin_normal"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+
+    <TextView
+        android:id="@+id/tv_scrollable"
+        android:layout_marginTop="@dimen/margin_normal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spv_scrollable"
+        android:text="可滚动柱形图示例"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.hudson.customview.diagramview.pillar.FixedPillarView
+        android:id="@+id/spv_scrollable2"
+        android:layout_marginTop="@dimen/margin_normal"
+        app:layout_constraintTop_toBottomOf="@id/tv_scrollable"
+        android:layout_marginLeft="@dimen/margin_normal"
+        android:layout_marginRight="@dimen/margin_normal"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+
+    <TextView
+        android:id="@+id/tv_fixed"
+        android:layout_marginTop="@dimen/margin_normal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spv_scrollable2"
+        android:text="固定自适应柱形图示例"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
