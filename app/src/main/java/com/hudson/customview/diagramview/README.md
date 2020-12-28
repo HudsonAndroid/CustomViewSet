@@ -32,6 +32,7 @@
 [演示代码](DiagramActivity.kt)
 
 ![动画展示](resources/show.gif)
+
 <img src="resources/pillar_view_display.png" width="320" alt="柱形图展示"/>
 
 ## 扇形统计图
