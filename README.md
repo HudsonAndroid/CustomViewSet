@@ -15,5 +15,6 @@
 ![动画展示](/app/src/main/java/com/hudson/customview/valueselector/resources/show.gif)
 ## [7.WrapLayout](/app/src/main/java/com/hudson/customview/wraplayout)
 <img src="/app/src/main/java/com/hudson/customview/wraplayout/resources/display.png" width="320" alt="图片展示"/>
+
 ## [8.圆形音频律动控件](/app/src/main/java/com/hudson/customview/circlewaveview)
 ## [9.滚轮自定义控件](https://github.com/HudsonAndroid/WheelView)

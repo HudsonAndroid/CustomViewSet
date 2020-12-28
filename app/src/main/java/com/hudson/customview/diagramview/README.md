@@ -1,7 +1,9 @@
 # 数学统计图
 ## 表格型数学统计图
 [表格型数学统计图](AbsMathDiagramView.kt)是针对包含了x轴（或者水平轴）、y轴（或者竖直轴）、原点和表格内容部分的数学统计图的抽象。如下图所示:
+
 ![抽象模型图](resources/abstract_img.png)
+
 在我们的[代码](AbsMathDiagramView.kt)中，也是按照这种方式，将整个数学表格型统计图抽象成四个部分，每个部分本身赋予android的view的绘制的特性，这里
 我们称之为[元素](interfaces/IElement.kt)，每个元素都具备绘制自身的能力（因为实际上四个块都是一个矩形区域，因此绘制时给定其宽高，以避免越界绘制）。
 四个具体元素各自拥有各自的要求，[水平轴或x轴](interfaces/IHorizontalAxis.kt)需要给统计图提供它的高度，这样我们才能具体知道表格部分或竖直轴（y轴）的
@@ -28,6 +30,7 @@
 等等。
 #### 实际效果
 [演示代码](DiagramActivity.kt)
+
 ![动画展示](resources/show.gif)
 <img src="resources/pillar_view_display.png" width="320" alt="柱形图展示"/>
 
