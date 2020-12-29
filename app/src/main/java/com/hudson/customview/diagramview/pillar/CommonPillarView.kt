@@ -13,6 +13,7 @@ import com.hudson.customview.diagramview.pillar.horizontalaxis.CommonHorizontalA
 import com.hudson.customview.diagramview.pillar.origin.TextOrigin
 import com.hudson.customview.diagramview.pillar.table.CommonPillarTable
 import com.hudson.customview.diagramview.pillar.verticalaxis.PillarVerticalAxis
+import java.lang.IllegalArgumentException
 
 /**
  * Created by Hudson on 2020/12/23.
@@ -34,6 +35,9 @@ abstract class CommonPillarView @JvmOverloads constructor(
         datas: List<Int>,
         maxValue: Int
     ) {
+        if(horizontalData.size != datas.size){
+            throw IllegalArgumentException("Horizontal axis title list size doesn't match data list size")
+        }
         mPillarTable = getPillarTable(verticalData, datas, maxValue, config)
         mPillarVerticalAxis = getPillarVerticalAxis(horizontalData, verticalData, datas, maxValue, config)
         mPillarHorizontalAxis =
