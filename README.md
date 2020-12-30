@@ -1,7 +1,10 @@
 # 自定义控件(Android)合集
 各个自定义控件按各个文件夹分类存储。注意：部分自定义控件携带自定义属性，在/res/values/attrs.xml中寻找相关属性
 ## [1.数学统计图自定义控件](/app/src/main/java/com/hudson/customview/diagramview)
-![动画展示](/app/src/main/java/com/hudson/customview/diagramview/resources/show.gif)
+### [表格型（目前仅实现了柱形图）统计图](/app/src/main/java/com/hudson/customview/diagramview/table)
+![动画展示](/app/src/main/java/com/hudson/customview/diagramview/table/resources/show.gif)
+### [扇形统计图](/app/src/main/java/com/hudson/customview/diagramview/percentview)
+![动画展示](/app/src/main/java/com/hudson/customview/diagramview/percentview/resources/show.gif)
 ## [2.手势锁](/app/src/main/java/com/hudson/customview/gesturelock)
 ![动画展示](/app/src/main/java/com/hudson/customview/gesturelock/resources/show.gif)
 ## [3.歌词播放器自定义控件](https://github.com/HudsonAndroid/NewLyricsView)

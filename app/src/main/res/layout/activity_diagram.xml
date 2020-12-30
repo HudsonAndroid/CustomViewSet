@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".diagramview.DiagramActivity">
+    tools:context=".diagramview.table.TableDiagramActivity">
 
-    <com.hudson.customview.diagramview.pillar.ScrollablePillarView
+    <com.hudson.customview.diagramview.table.pillar.ScrollablePillarView
         android:id="@+id/spv_scrollable"
         android:layout_marginTop="@dimen/margin_normal"
         app:layout_constraintTop_toTopOf="parent"
@@ -22,10 +22,11 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/spv_scrollable"
         android:text="可滚动柱形图示例"
+        android:textColor="@color/colorGray"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
-    <com.hudson.customview.diagramview.pillar.FixedPillarView
+    <com.hudson.customview.diagramview.table.pillar.FixedPillarView
         android:id="@+id/spv_scrollable2"
         android:layout_marginTop="@dimen/margin_normal"
         app:layout_constraintTop_toBottomOf="@id/tv_scrollable"
@@ -41,6 +42,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/spv_scrollable2"
         android:text="固定自适应柱形图示例"
+        android:textColor="@color/colorGray"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 

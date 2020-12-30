@@ -3,13 +3,8 @@ package com.hudson.customview
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import com.hudson.customview.circleseekbar.CircleSeekBarActivity
-import com.hudson.customview.diagramview.DiagramActivity
-import com.hudson.customview.gesturelock.GestureLockActivity
-import com.hudson.customview.stepprogressbar.StepActivity
-import com.hudson.customview.valueselector.ValueSelectActivity
-import com.hudson.customview.wraplayout.WrapActivity
-import com.hudson.customview.wraplayout.WrapLayout
+import com.hudson.customview.diagramview.percentview.sample.PercentActivity
+import com.hudson.customview.diagramview.table.TableDiagramActivity
 
 
 class MainActivity : AppCompatActivity() {
@@ -19,6 +14,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun jump(view: View) {
-        startTargetPage<DiagramActivity>()
+        startTargetPage<PercentActivity>()
     }
 }

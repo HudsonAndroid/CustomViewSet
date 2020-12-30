@@ -10,7 +10,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".diagramview.DiagramActivity"></activity>
+        <activity android:name=".diagramview.percentview.sample.PercentActivity"></activity>
+        <activity android:name=".diagramview.table.TableDiagramActivity" />
         <activity android:name=".wraplayout.WrapActivity" />
         <activity android:name=".valueselector.ValueSelectActivity" />
         <activity android:name=".stepprogressbar.StepActivity" />

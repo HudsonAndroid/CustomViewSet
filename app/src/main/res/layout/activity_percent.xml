@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hudson.customview.diagramview.percentview.type.sector.ClearFocusConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".diagramview.percentview.sample.PercentActivity">
+
+    <com.hudson.customview.diagramview.percentview.type.sector.view.SimpleSweepSectorView
+        android:id="@+id/sv_default"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintWidth_percent="0.65"
+        android:layout_width="0dp"
+        android:layout_height="200dp"/>
+
+    <com.hudson.customview.diagramview.percentview.type.sector.view.indicator.SimpleIndicatorView
+        android:id="@+id/indicator_default"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/sv_default"
+        app:layout_constraintTop_toTopOf="@id/sv_default"
+        app:layout_constraintBottom_toBottomOf="@id/sv_default"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <TextView
+        android:id="@+id/tv_demo1"
+        app:layout_constraintTop_toBottomOf="@id/sv_default"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:textColor="@color/colorGray"
+        android:text="扇形统计图携带指示器示例"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.hudson.customview.diagramview.percentview.type.sector.view.SimpleGrowAlongSectorView
+        android:id="@+id/sv_grow_default"
+        android:layout_marginTop="@dimen/margin_normal"
+        app:layout_constraintTop_toBottomOf="@id/tv_demo1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintWidth_percent="0.45"
+        android:layout_width="0dp"
+        android:layout_height="200dp"/>
+
+    <TextView
+        android:id="@+id/tv_demo2"
+        app:layout_constraintTop_toBottomOf="@id/sv_grow_default"
+        app:layout_constraintLeft_toLeftOf="@id/sv_grow_default"
+        app:layout_constraintRight_toRightOf="@id/sv_grow_default"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:text="其他示例（无指示器）"
+        android:textColor="@color/colorGray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.hudson.customview.diagramview.percentview.type.progress.SimpleAnimatedSetView
+        android:id="@+id/as_default"
+        app:layout_constraintTop_toTopOf="@id/sv_grow_default"
+        app:layout_constraintBottom_toBottomOf="@id/sv_grow_default"
+        app:layout_constraintLeft_toRightOf="@id/sv_grow_default"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <TextView
+        android:id="@+id/tv_demo3"
+        app:layout_constraintTop_toBottomOf="@id/as_default"
+        app:layout_constraintLeft_toLeftOf="@id/as_default"
+        app:layout_constraintRight_toRightOf="@id/as_default"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:text="其他百分比控件示例"
+        android:textColor="@color/colorGray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn_smooth"
+        android:text="动态变动数据"
+        android:onClick="smoothChange"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_demo3"
+        app:layout_constraintRight_toLeftOf="@+id/btn_direct"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn_direct"
+        android:text="直接变动数据"
+        android:onClick="directChange"
+        app:layout_constraintLeft_toRightOf="@id/btn_smooth"
+        app:layout_constraintTop_toTopOf="@id/btn_smooth"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <Button
+        android:id="@+id/btn_hollow"
+        android:text="填充中间/去除中间"
+        android:onClick="fillOrHollow"
+        app:layout_constraintLeft_toLeftOf="@id/btn_smooth"
+        app:layout_constraintRight_toRightOf="@id/btn_smooth"
+        android:layout_marginTop="@dimen/margin_normal"
+        app:layout_constraintTop_toBottomOf="@id/btn_smooth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn_select"
+        android:text="全局取消选中/局部取消选中"
+        android:onClick="globalOrPart"
+        app:layout_constraintLeft_toLeftOf="@id/btn_direct"
+        app:layout_constraintTop_toTopOf="@id/btn_hollow"
+        app:layout_constraintRight_toRightOf="@id/btn_direct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</com.hudson.customview.diagramview.percentview.type.sector.ClearFocusConstraintLayout>
