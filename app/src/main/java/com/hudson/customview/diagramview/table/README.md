@@ -28,7 +28,7 @@
 - 字体大小
 等等。
 ### 实际效果
-[演示代码](DiagramActivity.kt)
+[演示代码](TableDiagramActivity.kt)
 
 ![动画展示](resources/show.gif)
 
