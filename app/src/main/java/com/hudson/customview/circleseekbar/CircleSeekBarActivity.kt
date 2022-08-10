@@ -7,8 +7,10 @@ import android.os.Bundle
 import android.util.Log
 import com.hudson.customview.R
 import com.hudson.customview.gesturelock.GestureLockActivity
+import com.hudson.register.annotation.SubPage
 import timber.log.Timber
 
+@SubPage("圆形进度条")
 class CircleSeekBarActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

@@ -3,8 +3,9 @@ package com.hudson.customview.stepprogressbar
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.hudson.customview.R
+import com.hudson.register.annotation.SubPage
 
-
+@SubPage("步骤进度条控件")
 class StepActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

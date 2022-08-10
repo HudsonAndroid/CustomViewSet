@@ -6,7 +6,9 @@ import com.hudson.customview.R
 import com.hudson.customview.diagramview.table.pillar.Config
 import com.hudson.customview.diagramview.table.pillar.FixedPillarView
 import com.hudson.customview.diagramview.table.pillar.ScrollablePillarView
+import com.hudson.register.annotation.SubPage
 
+@SubPage("柱形图控件（自定义表格型控件）")
 class TableDiagramActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

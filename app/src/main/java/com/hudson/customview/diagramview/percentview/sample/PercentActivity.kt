@@ -11,7 +11,9 @@ import com.hudson.customview.diagramview.percentview.type.sector.percentinfo.Per
 import com.hudson.customview.diagramview.percentview.type.sector.view.SimpleGrowAlongSectorView
 import com.hudson.customview.diagramview.percentview.type.sector.view.SimpleSweepSectorView
 import com.hudson.customview.diagramview.percentview.type.sector.view.indicator.SimpleIndicatorView
+import com.hudson.register.annotation.SubPage
 
+@SubPage("百分比控件（扇形图）")
 class PercentActivity : AppCompatActivity() {
     private lateinit var datas: List<SimulateData>
     private lateinit var sectorView: SimpleSweepSectorView
